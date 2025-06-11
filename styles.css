@@ -1,0 +1,46 @@
+/* styles.css */
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background: #e0f7fa;
+}
+
+.flower {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+/* Each petal is an oval rotated around center */
+.petal {
+  position: absolute;
+  width: 80px;
+  height: 120px;
+  background: #ff8a80;
+  border-radius: 50% 50% 50% 50%;
+  top: 40px;  /* centers petals vertically */
+  left: 60px; /* centers petals horizontally */
+  transform-origin: 50% 80px; /* pivot near bottom of each petal */
+}
+
+/* Rotate each petal around the center */
+.petal1 { transform: rotate(0deg); }
+.petal2 { transform: rotate(72deg); }
+.petal3 { transform: rotate(144deg); }
+.petal4 { transform: rotate(216deg); }
+.petal5 { transform: rotate(288deg); }
+
+/* Flower center */
+.center {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #ffd54f;
+  border-radius: 50%;
+  top: 60px;
+  left: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
